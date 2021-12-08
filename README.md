@@ -6,8 +6,8 @@ requests.
 ## Subindo os servers
 
 ```bash
-git clone https://github.com/silvioprog/macetada.git
-cd macetada/comboio
+git clone https://github.com/macetada/comboio.git
+cd comboio/
 docker-compose up -d
 ```
 
