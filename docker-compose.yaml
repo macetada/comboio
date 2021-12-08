@@ -12,6 +12,30 @@ services:
       - 8081:80
     networks:
       - servers
+  gin:
+    image: ghcr.io/macetada/gin:main
+    ports:
+      - 8082:80
+    networks:
+      - servers
+  actix:
+    image: ghcr.io/macetada/actix:main
+    ports:
+      - 8083:80
+    networks:
+      - servers
+  plug:
+    image: ghcr.io/macetada/plug:main
+    ports:
+      - 8084:80
+    networks:
+      - servers
+  node:
+    image: ghcr.io/macetada/node:main
+    ports:
+      - 8085:80
+    networks:
+      - servers
 networks:
   servers:
     driver: bridge
