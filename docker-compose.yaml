@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  nginx:
+    image: ghcr.io/macetada/nginx:main
+    ports:
+      - 8080:80
+    networks:
+      - servers
+  fastapi:
+    image: ghcr.io/macetada/fastapi:main
+    ports:
+      - 8081:80
+    networks:
+      - servers
+networks:
+  servers:
+    driver: bridge
